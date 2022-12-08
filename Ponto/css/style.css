@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.header {
+    background-color: rgb(226, 128, 43);
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+h2 {
+
+    height: 50px;
+    width: 400px;    
+    padding: 20px;    
+    outline: none;
+           
+}
+
+main {
+    padding: 30px 50px;
+}
+
+.lineinput {    
+    display: grid;
+    margin-bottom: 10px;     
+}
+
+input {
+    
+    height: 50px;
+    width: 400px;
+    background-color:white;
+    padding: 20px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    border: .5px solid #ccc;
+}
+
+::-webkit-input-placeholder{color: #777777;}
+input::-moz-placeholder{color: #777777;}
+
+.dropDown{
+    width: 250px;
+    background-color:#ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: .5px solid #2d2d2d;
+    height: 90px;
+    overflow: auto;
+    display: none;
+    transition: .5s;
+    transform: translate(0px, -10px);
+}
+.dropDown2{
+    width: 180px;
+    background-color:#ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: .5px solid #2d2d2d;
+    height: 70px;
+    overflow: auto;
+    display: none;
+    transition: .5s;
+    transform: translate(0px, -10px);
+}
+
+::-webkit-scrollbar{
+    background-color:#ccc;
+    width: 5px;
+    border-top-right-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #5b5b5b;
+    border-radius: 5px;
+}
+
+.item{
+    height: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.item:hover{
+    background-color: #ccc;
+    padding-left: 7px;
+    transition: .3s;
+}
+
+button {
+    border: 0;
+    padding: 10px;
+    outline: 0;
+    background-color: rgb(215, 146, 18);
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+    transform: all ease 0.3s;    
+}
+
+button:hover {
+    background-color: rgb(111, 20, 197);
+}
+
+.content {
+    margin-top: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+table th {
+    background-color: #ccc;
+}
+
+table th, td {    
+    padding: 1px 5px;
+    text-align: left;
+}
+
+table td img {
+    width: 22px;    
+}
+
+.center{
+    text-align: center;
+}
+
+

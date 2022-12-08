@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Controle Hora Extras</title>
+
+    
+    <link rel="stylesheet" href="css/style.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+
+    <script src="js/script.js"></script>
+    <script src="js/style.js"></script>
+    <script src="js/moment-with-locales.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1 class="header">Controle de Horas Extras</h1>
+        <h2>
+            <img src="img/logo_ligga_laranja.svg" alt="logo_ligga_laranja" width="70px" height="70px">
+        </h2>        
+    </header>
+    <main>        
+    <div>    
+        <div class="lineinput">
+            <input type="text" name="categoria" id="colaborador" placeholder="Selecione um Colaborador"
+             onfocus="dropDown(0)" onblur="dropDown(1)"/>
+
+             <div class="dropDown">
+             <div class="listDropDown">
+                <div class="item" id="item-1" onmousedown="category(1)">Alexsandro Palmeira</div>
+                <div class="item" id="item-2" onmousedown="category(2)">Andrews Gustavo Cordeiro</div>
+                <div class="item" id="item-3" onmousedown="category(3)">Cleiton Henrique dos Santos</div>
+                <div class="item" id="item-4" onmousedown="category(4)">Diego Monte Sião Pires</div>
+                <div class="item" id="item-5" onmousedown="category(5)">Fernanda Cristina Vieira</div>
+                <div class="item" id="item-6" onmousedown="category(6)">Fernando Mueller</div>
+                <div class="item" id="item-7" onmousedown="category(7)">Hebert Mikael Fronza</div>
+                <div class="item" id="item-8" onmousedown="category(8)">Izac Raffaelli Correa</div>
+                <div class="item" id="item-9" onmousedown="category(9)">João Pedro F. Pavan</div>
+                <div class="item" id="item-10" onmousedown="category(10)">João Roberto Brunetto</div>
+                <div class="item" id="item-11" onmousedown="category(11)">Luis Augusto Ribeiro Costa</div>
+                <div class="item" id="item-12" onmousedown="category(12)">Luis Eduardo Pereira Bueno</div>
+                <div class="item" id="item-13" onmousedown="category(13)">Paulo Roberto Cauca Rymovicz</div>
+                <div class="item" id="item-14" onmousedown="category(14)">Paulo Rogério de Andrade</div>
+                <div class="item" id="item-15" onmousedown="category(15)">Pedro Henrique Ramos</div>
+                <div class="item" id="item-16" onmousedown="category(16)">Rafael Klutchkouski Mesquita</div>
+                <div class="item" id="item-17" onmousedown="category(17)">Rodrigo Fernando Kowalski</div>
+                <div class="item" id="item-18" onmousedown="category(18)">Thalles Sanches Alves</div>
+
+             </div>   
+             </div>
+        </div>       
+        
+        <div class="Lineinput">            
+            <input type="text" name="chamado" id="chamado" placeholder="Qual tipo de Chamado" class="input"
+            onfocus="dropDown2(0)" onblur="dropDown2(1)"/>
+
+            <div class="dropDown2">
+                    <div class="item" id="item-19" onmousedown="category2(19)">Chamado</div>                
+                    <div class="item" id="item-20" onmousedown="category2(20)">Incidente</div>
+                    <div class="item" id="item-21" onmousedown="category2(21)">GMUD-Emergencial</div>
+                    <div class="item" id="item-22" onmousedown="category2(22)">GMUD-Planejada</div>
+            </div>
+        </div>
+        
+        <br>
+        <div class="lineinput">            
+            <input type="date" id="datainit" placeholder="Data Inicial">
+        </div>       
+        
+        <div class="lineinput">            
+            <input type="date" id="datafim" placeholder="Data Final">
+        </div>        
+        
+        <div class="lineinput">            
+            <input type="time" id="horainit" placeholder="Hora Inicial">
+        </div>
+
+        <div class="lineinput">            
+            <input type="time" id="horafim" placeholder="Hora Final">
+        </div>
+
+        <div class="lineinput">            
+            <input type="text" id="justificativa" placeholder="Numero do Incidente/GMUD">
+        </div>
+
+        <button onclick="registro.registrar()" id="btn1">Registrar</button> 
+        <button onclick="registro.limpar()">Limpar</button>
+    </div>
+    
+    <div class="content">
+        <table border="1">
+            <thead>
+                <th class="center">Colaborador</th>
+                <th class="center">Chamado</th>
+                <th class="center">Data Início</th>              
+                <th class="center">Data Fim</th>
+                <th class="center">Hora Início</th> 
+                <th class="center">Hora Fim</th>                
+                <th class="center">Justificativa</th>
+                <th class="center">Ações</th>                
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+  </main>    
+</body>
+</html>
